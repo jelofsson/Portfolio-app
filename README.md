@@ -1,13 +1,13 @@
 Portfolio-app
 =============
 
-[b]SplashActivity.java[/b]
+**SplashActivity.java**
 ![Image](/Pictures/20131003_160544.jpg)
 
-[b]MainActivity.java[/b]
+**MainActivity.java**
 ![Image](/Pictures/20131003_160552.jpg)
 
-[b]ProjectActivity.java[/b]
+**ProjectActivity.java**
 ![Image](/Pictures/20131003_160557.jpg)
 
 Git commands & Wiki
