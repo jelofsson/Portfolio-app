@@ -1,14 +1,31 @@
 Portfolio-app
 =============
 
-git pull                    # Fetches the latest version of the project
+[b]SplashActivity.java[/b]
+![Image](/Pictures/20131003_160544.jpg)
 
-git add <file>		          # Add file contents to the index
+[b]MainActivity.java[/b]
+![Image](/Pictures/20131003_160552.jpg)
 
-git commit -a -m "Message"  # Commit added files / changes
+[b]ProjectActivity.java[/b]
+![Image](/Pictures/20131003_160557.jpg)
 
-git push                    # Uploads the files / changes to github
+Git commands & Wiki
+===================
 
-git checkout .		          # Revert local changes in non-committed code
+<http://alvinalexander.com/git/git-cheat-sheet-git-reference-commands>
 
-http://alvinalexander.com/git/git-cheat-sheet-git-reference-commands
+> Fetches the latest version of the project
+> > git pull
+>
+> Add file contents to the index
+> > git add <file>
+>
+> Commit added files / changes
+> >git commit -a -m "Message"  
+>
+> Uploads the files / changes to github
+> > git push
+>
+> Revert local changes in non-committed code
+> > git checkout .

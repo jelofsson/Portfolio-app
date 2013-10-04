@@ -26,6 +26,10 @@
             android:name="com.example.portfolioapp.MainActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.example.portfolioapp.ProjectActivity"
+            android:label="@string/title_activity_project" >
+        </activity>
     </application>
 
 </manifest>
