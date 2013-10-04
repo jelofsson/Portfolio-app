@@ -1,13 +1,13 @@
 Portfolio-app
 =============
 
-**SplashActivity.java**
+**SplashActivity.java**  
 ![Image](/Pictures/20131003_160544.jpg)
 
-**MainActivity.java**
+**MainActivity.java**  
 ![Image](/Pictures/20131003_160552.jpg)
 
-**ProjectActivity.java**
+**ProjectActivity.java**  
 ![Image](/Pictures/20131003_160557.jpg)
 
 Git commands & Wiki
@@ -22,7 +22,7 @@ Git commands & Wiki
 > > git add <file>
 >
 > Commit added files / changes
-> >git commit -a -m "Message"  
+> >git commit -a -m "Message"
 >
 > Uploads the files / changes to github
 > > git push
