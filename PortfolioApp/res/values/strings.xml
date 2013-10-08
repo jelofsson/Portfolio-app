@@ -6,5 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_project">ProjectActivity</string>
+    
+    <string name="action_previous">Föregående</string>
+    <string name="action_next">Nästa</string>
 
 </resources>
