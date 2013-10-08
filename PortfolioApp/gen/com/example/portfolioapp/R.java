@@ -30,12 +30,8 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-<<<<<<< HEAD
-        public static final int activity_splash=0x7f030001;
-=======
         public static final int activity_project=0x7f030001;
         public static final int activity_splash=0x7f030002;
->>>>>>> f154a42b085ef8c7c2a12875f428cc5d69aa84b1
     }
     public static final class menu {
         public static final int main=0x7f070000;
