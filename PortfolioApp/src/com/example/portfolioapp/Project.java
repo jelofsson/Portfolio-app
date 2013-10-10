@@ -22,9 +22,12 @@ public class Project {
 	public ArrayList<String> getPictures() { return pictures; }
 	public ArrayList<String> getVideos() { return videos; }
 	
-	public void loadProjectById(int id)
+	public void loadById(int id)
 	{
-		// Todo...
+		pictures.clear();
+		videos.clear();
+		description = new String();
+		// Todo... Load from XML file..
 	}
 
 }
