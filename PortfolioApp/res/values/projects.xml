@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="1">Hello this is one description!</string>
-	<string name="2">Hello this is another description!</string>    
+    
+    <!-- Create a name 'schedule' for a easy understanding how to read in the objects. The one below is a example -->
+    
+	<string name="project1_desc1">Hello this is one description!</string>
+	<string name="project1_desc2">Hello this is another description!</string>    
 </resources>
