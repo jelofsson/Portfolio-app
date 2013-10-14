@@ -2,7 +2,9 @@
 <resources>
     
     <!-- Create a name 'schedule' for a easy understanding how to read in the objects. The one below is a example -->
-    
-	<string name="project1_desc1">Hello this is one description!</string>
-	<string name="project1_desc2">Hello this is another description!</string>    
+	<string name="project0_desc" author="jimmi">Hello this is another description!</string>
+	<string name="project1_desc" author="kaan">Hello this is one description!</string>
+	<string name="project2_desc">Hello this is another description!</string>
+	<string name="project3_desc">Hello this is another description!</string>
+	<string name="project4_desc">Hello this is another description!</string>
 </resources>
