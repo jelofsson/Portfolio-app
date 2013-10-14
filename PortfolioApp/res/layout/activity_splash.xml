@@ -16,9 +16,18 @@
         android:onClick="onClick"
         android:src="@drawable/continue_button" />
 
-        <TextView
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Splash" />
+
+    <TextView
+        android:id="@+id/xmlText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
 
 </RelativeLayout>

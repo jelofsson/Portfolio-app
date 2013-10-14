@@ -25,6 +25,12 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
+<<<<<<< HEAD
+        public static final int action_settings=0x7f080003;
+        public static final int gotoMainBtn=0x7f080000;
+        public static final int textView2=0x7f080001;
+        public static final int xmlText=0x7f080002;
+=======
         public static final int action_next=0x7f080009;
         public static final int action_previous=0x7f080008;
         public static final int action_settings=0x7f080007;
@@ -35,6 +41,7 @@ public final class R {
         public static final int picture=0x7f080003;
         public static final int text=0x7f080005;
         public static final int video=0x7f080004;
+>>>>>>> 14857ee5453c12badcd8effc175743abba9a3963
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -50,6 +57,17 @@ public final class R {
         public static final int splash=0x7f070002;
     }
     public static final class string {
+<<<<<<< HEAD
+        public static final int action_settings=0x7f050003;
+        public static final int app_name=0x7f050002;
+        public static final int hello_world=0x7f050004;
+        /**  Create a name 'schedule' for a easy understanding how to read in the objects. The one below is a example 
+         */
+        public static final int project1_desc1=0x7f050000;
+        public static final int project1_desc2=0x7f050001;
+        public static final int title_activity_project=0x7f050006;
+        public static final int title_activity_splash=0x7f050005;
+=======
         public static final int action_next=0x7f050006;
         public static final int action_previous=0x7f050005;
         public static final int action_settings=0x7f050001;
@@ -57,6 +75,7 @@ public final class R {
         public static final int hello_world=0x7f050002;
         public static final int title_activity_project=0x7f050004;
         public static final int title_activity_splash=0x7f050003;
+>>>>>>> 14857ee5453c12badcd8effc175743abba9a3963
     }
     public static final class style {
         /** 
