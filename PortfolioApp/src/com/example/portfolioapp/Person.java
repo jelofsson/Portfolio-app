@@ -1,24 +1,29 @@
 package com.example.portfolioapp;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Person {
 	
-	String 				name		= new String();
-	ArrayList<Project>	projects	= new ArrayList<Project>();
+	String 				name,description	= new String();
+	ArrayList<String> 	pictures			= new ArrayList<String>();
+	ArrayList<Project>	projects			= new ArrayList<Project>();
 	
 	public Person()
 	{
 		super();
 	}
 	
-	public Project getProjectById(int id) { return (projects.size()==0) ? new Project() : (projects.size()>=id) ? projects.get(0) : projects.get(id); }
+	public Project getProjectById(int id) 
+	{ 
+		return (projects.size()==0) ? 
+			new Project() : (projects.size()>=id) ? projects.get(0) : projects.get(id); 
+	}
 	
-	public void loadByName(String n)
+	public Project getRandomProject()
 	{
-		name = n;
-		projects.clear();
-		// Todo.. load the users projects into ArrayList projects!
+		Random r = new Random();
+		return getProjectById( r.nextInt(projects.size()-1) );
 	}
 	
 }

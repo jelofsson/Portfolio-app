@@ -2,3 +2,5 @@
 thumbnail
 .DSStore
 PortfolioApp/bin/
+PortfolioApp/AndroidManifest.xml
+PortfolioApp/gen/com/example/portfolioapp/R.java
