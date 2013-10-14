@@ -32,21 +32,5 @@ public class Project {
 		description = new String();
 		// Todo... Load from XML file..
 
-		if(id==0){
-			description = activity.getResources().getString(R.string.project0_desc);
-			pictures.add(R.drawable.continue_button); //TODO, fix this shit :(
-			pictures.add();
-		}else if(id==1){
-			description = activity.getResources().getString(R.string.project1_desc);
-		}
-		else if(id==2){
-			description = activity.getResources().getString(R.string.project3_desc);
-
-		}
-		else if(id==3){
-			description = activity.getResources().getString(R.string.project4_desc);
-
-		}	
-	}
-
+}
 }

@@ -14,34 +14,25 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-<<<<<<< HEAD
 <activity android:name="SplashActivity"
               android:label="@string/app_name"
               android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
-=======
-	<activity 
-	    	android:name="SplashActivity" 
-	    	android:label="@string/app_name" 
-	    	android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
->>>>>>> 14857ee5453c12badcd8effc175743abba9a3963
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-<<<<<<< HEAD
+
     </activity>   
-=======
-    </activity>        
+      
     <activity
             android:name="com.example.portfolioapp.ProjectActivity"
             android:label="@string/title_activity_project" >
         </activity>
->>>>>>> 14857ee5453c12badcd8effc175743abba9a3963
         <activity
             android:name="com.example.portfolioapp.MainActivity"
             android:label="@string/app_name" >
         </activity>
 
-    </application>
 
+</application>
 </manifest>

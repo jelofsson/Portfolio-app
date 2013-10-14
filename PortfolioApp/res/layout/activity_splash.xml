@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="portfolio"
+        android:src="@drawable/portfolio" />
 
     <ImageButton
         android:id="@+id/gotoMainBtn"
-        style="@drawable/continue_button"
+        style="@drawable/continue_button_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="64dp"
         android:adjustViewBounds="false"
-        android:background="@drawable/continue_button"
+        android:background="@drawable/continue_button_xml"
+        android:contentDescription="continue"
         android:onClick="onClick"
-        android:src="@drawable/continue_button" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Splash" />
-
-    <TextView
-        android:id="@+id/xmlText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:text="TextView" />
+        android:src="@drawable/continue_button_xml" />
 
 </RelativeLayout>
