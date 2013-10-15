@@ -17,10 +17,8 @@ Start by adding this code where you want to
 send the user to another Activity:
 
     Intent intent = new Intent(this, ProjectActivity.class); // What activity we want to go to!
-    // Setting Extra value to send to the activity:
-    intent.putExtra("name", Person.name);
-    // Go to the activity:
-    startActivity(intent);
+    intent.putExtra("name", Person.name); // Setting Extra value to send to the activity
+    startActivity(intent); // Go to the activity:
 
 Then if you want to retrieve values in your activity that may be sent from another activity:
 
