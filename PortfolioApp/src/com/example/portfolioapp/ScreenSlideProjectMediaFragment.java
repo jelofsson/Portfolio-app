@@ -1,7 +1,5 @@
 package com.example.portfolioapp;
 
-import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
+
 
 /**
  * A fragment representing a single project in the project-view. The fragment shows images/videos & text
