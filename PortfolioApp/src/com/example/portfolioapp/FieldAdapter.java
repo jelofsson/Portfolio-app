@@ -20,6 +20,7 @@ public class FieldAdapter extends ArrayAdapter<Person>{
     public FieldAdapter(Activity a, int textViewResourceId, ArrayList<Person> entries) {
         super(a, textViewResourceId, entries);
         this.persons = entries;
+        this.activity = a;
     }
  
     public static class ViewHolder {
@@ -33,6 +34,10 @@ public class FieldAdapter extends ArrayAdapter<Person>{
         View v = convertView;
         ViewHolder holder;
         if (v == null) {
+        	/*
+LayoutInflater inflater = (LayoutInflater)context.getSystemService
+      (Context.LAYOUT_INFLATER_SERVICE);
+        	 */
             LayoutInflater vi =
                 (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v = vi.inflate(R.layout.field_input, null);
