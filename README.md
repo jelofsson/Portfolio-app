@@ -16,20 +16,16 @@ Start another Activity and send data to it
 Start by adding this code where you want to
 send the user to another Activity:
 
-`
-Intent intent = new Intent(this, ProjectActivity.class); // What activity we want to go to!  return
-// Setting Extra value to send to the activity:  return
-intent.putExtra("name", Person.name);  return
-// Go to the activity:  return
-startActivity(intent);  
-`
+    Intent intent = new Intent(this, ProjectActivity.class); // What activity we want to go to!
+    // Setting Extra value to send to the activity:
+    intent.putExtra("name", Person.name);
+    // Go to the activity:
+    startActivity(intent);
 
 Then if you want to retrieve values in your activity that may be sent from another activity:
 
-`
-Intent intent = getIntent();  return
-String name = intent.getStringExtra("name");  
-`
+    Intent intent = getIntent();
+    String name = intent.getStringExtra("name");
 
 Git commands & Wiki
 ===================
