@@ -16,8 +16,8 @@ public class Person {
 	
 	public Project getProjectById(int id) 
 	{ 
-		return (projects.size()==0) ? 
-			new Project() : (projects.size()>=id) ? projects.get(0) : projects.get(id); 
+		return (projects.size()==0 || projects.size()<=id) ? 
+			new Project() : projects.get(id); 
 	}
 	
 	public Project getRandomProject()

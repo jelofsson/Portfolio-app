@@ -1,5 +1,7 @@
 package com.example.portfolioapp;
 
+import java.util.ArrayList;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -35,13 +37,19 @@ public class ProjectActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_project);
-        //setContentView(R.layout.activity_screen_slide_pager);
-
+		
+		// Check if we got a User sent to us in EXTRAS:
+		Intent intent = getIntent();
+		if(intent.getStringExtra("name") == "jimmi")
+		{
+			//Person person = new Jimmi();
+		}
+		Person person = new Jimmi();
         // Instantiate a ViewPager and a PagerAdapter.
         mPager = (ViewPager) findViewById(R.id.pager);
         //mPager.setPageTransformer(true, new DepthPageTransformer());
         mPager.setPageTransformer(true, new ZoomOutPageTransformer());
-        mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+        mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), person);
         mPager.setAdapter(mPagerAdapter);
 		
 		/**
@@ -102,19 +110,22 @@ public class ProjectActivity extends FragmentActivity {
      * sequence.
      */
     private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
-        public ScreenSlidePagerAdapter(FragmentManager fm) {
+    	
+    	protected Person person;
+    	
+        public ScreenSlidePagerAdapter(FragmentManager fm, Person p) {
             super(fm);
+            person = p;
         }
 
         @Override
         public Fragment getItem(int position) {
-        	// return new ScreenSlidePageFragment();
-            return (Fragment) ScreenSlidePageFragment.create(position);
+            return (Fragment) ScreenSlideProjectFragment.create(position, person.getProjectById(position));
         }
 
         @Override
         public int getCount() {
-            return NUM_PAGES;
+            return person.projects.size();
         }
     }
     

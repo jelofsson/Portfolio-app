@@ -15,9 +15,10 @@ public class Jimmi extends Person {
 		
 		// Project 1:
 		Project p = new Project();
-		p.description = "Portfolio app!";
-		p.pictures.add("Picture_1");
-		p.pictures.add("Picture_2");
+		p.name = "Conpot.se";
+		p.description = "Conpot- Den bästa tidningen för entreprenörer inom anläggning, bygg och verkstad";
+		p.pictures.add("drawable/conpot");
+		p.pictures.add("drawable/conpot2");
 		projects.add(p);
 	}
 

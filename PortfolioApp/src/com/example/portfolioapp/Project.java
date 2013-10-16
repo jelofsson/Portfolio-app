@@ -8,7 +8,7 @@ public class Project {
 
 	ArrayList<String> 	pictures	= new ArrayList<String>();
 	ArrayList<String> 	videos		= new ArrayList<String>();
-	String				description = new String();
+	String				description,name = new String();
 
 	Activity activity = new Activity();
 	public Project()
@@ -25,12 +25,4 @@ public class Project {
 	public ArrayList<String> getPictures() { return pictures; }
 	public ArrayList<String> getVideos() { return videos; }
 
-	public void loadById(int id)
-	{
-		pictures.clear();
-		videos.clear();
-		description = new String();
-		// Todo... Load from XML file..
-
-}
 }

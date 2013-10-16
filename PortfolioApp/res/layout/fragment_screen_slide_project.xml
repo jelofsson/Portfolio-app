@@ -26,20 +26,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp" >
-        
-			<android.support.v4.view.ViewPager
-			    xmlns:android="http://schemas.android.com/apk/res/android"
-			    android:id="@+id/mediaPager"
-    			android:layout_width="match_parent"
-    			android:layout_height="140dip" />
 
-			<TextView
-			    android:id="@+id/textViewProjectname"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:text="Project-name"
-			    android:textAppearance="?android:attr/textAppearanceMedium" />
-        
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mediaPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/ProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Project-name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/ProjectDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project-description"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
 </ScrollView>

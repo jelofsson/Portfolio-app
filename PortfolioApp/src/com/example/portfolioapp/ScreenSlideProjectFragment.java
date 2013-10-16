@@ -1,5 +1,7 @@
 package com.example.portfolioapp;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,6 +11,9 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.VideoView;
 
 /**
  * A fragment representing a single project in the project-view. The fragment shows images/videos & text
@@ -22,7 +27,7 @@ public class ScreenSlideProjectFragment extends Fragment {
     /**
      * The number of media-objects to show on this user.
      */
-    private static final int NUM_OBJECTS = 5;
+    private int NUM_OBJECTS = 5;
 	
     /**
      * The argument key for the page number this fragment represents.
@@ -33,6 +38,9 @@ public class ScreenSlideProjectFragment extends Fragment {
      * The fragment's page number, which is set to the argument value for {@link #ARG_PAGE}.
      */
     private int mPageNumber;
+    private String mName;
+    private String mDescription;
+    private ArrayList<String> mMedia;
     
     protected static Project project;
 
@@ -41,11 +49,12 @@ public class ScreenSlideProjectFragment extends Fragment {
      */
     public static ScreenSlideProjectFragment create(int pageNumber, Project p) {
     	
-    	project = p;
-    	
     	ScreenSlideProjectFragment fragment = new ScreenSlideProjectFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, pageNumber);
+        args.putString("name", p.name);
+        args.putString("description", p.description);
+        args.putStringArrayList("media", p.pictures);
         fragment.setArguments(args);
         return fragment;
     }
@@ -57,6 +66,9 @@ public class ScreenSlideProjectFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPageNumber = getArguments().getInt(ARG_PAGE);
+        mName = getArguments().getString("name");
+        mDescription = getArguments().getString("description");
+        mMedia = getArguments().getStringArrayList("media");
     }
 
     @Override
@@ -66,13 +78,13 @@ public class ScreenSlideProjectFragment extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater
                 .inflate(R.layout.fragment_screen_slide_project, container, false);
         
-        
+        ((TextView) rootView.findViewById(R.id.ProjectName)).setText(mName);
+        ((TextView) rootView.findViewById(R.id.ProjectDescription)).setText(mDescription);
+
         // Set the media and description.
         // Media, Instantiate a ViewPager and a PagerAdapter:
         PagerAdapter mPagerAdapter = new ScreenSlidePagerAdapter(getFragmentManager());
         ((ViewPager) rootView.findViewById(R.id.mediaPager)).setAdapter(mPagerAdapter);
-        // Description:
-        
         return rootView;
     }
 
@@ -89,9 +101,7 @@ public class ScreenSlideProjectFragment extends Fragment {
      */
     private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
     	
-    	Project project = new Project();
-    	
-    	public void setProject(Project p) { project = p; }
+    	protected Project project;
     	
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
@@ -99,12 +109,12 @@ public class ScreenSlideProjectFragment extends Fragment {
 
         @Override
         public Fragment getItem(int position) {
-            return (Fragment) ScreenSlideProjectMediaFragment.create( position, project );
+            return (Fragment) ScreenSlideProjectMediaFragment.create( position, mMedia.get(position) );
         }
 
         @Override
         public int getCount() {
-            return NUM_OBJECTS;
+            return mMedia.size();
         }
     }
 }
