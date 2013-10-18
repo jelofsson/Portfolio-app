@@ -43,16 +43,16 @@ public class ProjectActivity extends FragmentActivity {
 		// Check if we got a User sent to us in EXTRAS:
 		Intent extras = getIntent();
 		//Bundle extras = getIntent().getExtras(); 
-		
-		if(extras.getStringExtra("name") == "Jimmi Elofsson")
+		String name = extras.getStringExtra("name");
+		if(name.equals("Jimmi Elofsson"))
 		{
 			person = new Jimmi();
 		}
-		else if(extras.getStringExtra("name") == "Kaan Orgunmat")
+		else if(name.equals("Kaan Orgunmat"))
 		{
 			person = new Kaan();
 		}
-		else if(extras.getStringExtra("name") == "Carl Blockås")
+		else if(name.equals("Carl Blockås"))
 		{
 			person = new Carl();
 		}

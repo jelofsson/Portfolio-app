@@ -69,7 +69,7 @@ public class ScreenSlideProjectMediaFragment extends Fragment {
         	Log.v("MediaFragment", mMedia);
         	((TextView) rootView.findViewById(R.id.text)).setVisibility(View.GONE);
         	int imageResource = getResources().getIdentifier(mMedia, null, rootView.getContext().getPackageName());
-        	Picasso.with(rootView.getContext()).load(imageResource).into(((ImageView) rootView.findViewById(R.id.picture)));
+        	Picasso.with(rootView.getContext()).load(imageResource).resize(250, 250).centerCrop() .into(((ImageView) rootView.findViewById(R.id.picture)));
         }
         else
         {
