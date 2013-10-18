@@ -42,7 +42,7 @@ public class ProjectActivity extends FragmentActivity {
 		Intent intent = getIntent();
 		if(intent.getStringExtra("name") == "jimmi")
 		{
-			//Person person = new Jimmi();
+			Person person = new Jimmi();
 		}
 		Person person = new Jimmi();
         // Instantiate a ViewPager and a PagerAdapter.
@@ -51,15 +51,6 @@ public class ProjectActivity extends FragmentActivity {
         mPager.setPageTransformer(true, new ZoomOutPageTransformer());
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), person);
         mPager.setAdapter(mPagerAdapter);
-		
-		/**
-		 * Things TODO:
-		 * ==========================
-		 * Check the animation effect
-		 * Check for slider (images/videos)
-		 * Check for project slider
-		 * Button download/information
-		 */
 	}
 
     @Override

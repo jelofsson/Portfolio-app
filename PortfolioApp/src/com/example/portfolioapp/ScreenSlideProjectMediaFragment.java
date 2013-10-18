@@ -3,6 +3,7 @@ package com.example.portfolioapp;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,8 +66,8 @@ public class ScreenSlideProjectMediaFragment extends Fragment {
         
         if(mMedia.length()>0)
         {
+        	Log.v("MediaFragment", mMedia);
         	((TextView) rootView.findViewById(R.id.text)).setVisibility(View.GONE);
-        	((ImageView) rootView.findViewById(R.id.picture)).setImageResource(R.drawable.ic_launcher);
         	int imageResource = getResources().getIdentifier(mMedia, null, rootView.getContext().getPackageName());
         	Picasso.with(rootView.getContext()).load(imageResource).into(((ImageView) rootView.findViewById(R.id.picture)));
         }

@@ -25,11 +25,6 @@ import android.widget.VideoView;
 public class ScreenSlideProjectFragment extends Fragment {
 	
     /**
-     * The number of media-objects to show on this user.
-     */
-    private int NUM_OBJECTS = 5;
-	
-    /**
      * The argument key for the page number this fragment represents.
      */
     public static final String ARG_PAGE = "page";
@@ -99,10 +94,8 @@ public class ScreenSlideProjectFragment extends Fragment {
      * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
      * sequence.
      */
-    private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
-    	
-    	protected Project project;
-    	
+    private class ScreenSlidePagerAdapter extends FragmentPagerAdapter 
+    {	
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
