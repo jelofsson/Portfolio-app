@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,8 +46,19 @@ public class FieldAdapter extends ArrayAdapter<Person>{
         }
         else
             holder=(ViewHolder)v.getTag();
- 	// Load our data into this view..
+        
+        // Load our data into this view..
         final Person person = persons.get(position);
+        
+        v.setOnClickListener(new View.OnClickListener() {
+        	public final String NAME = person.name;
+            public void onClick(View v) {
+            	Intent intent = new Intent(v.getContext() , ProjectActivity.class); // What activity we want to go to!
+            	intent.putExtra("name", NAME); // Setting Extra value to send to the activity
+            	getContext().startActivity(intent); // Go to the activity:
+            }
+        });
+        
         //final Project project = person.getProjectById(1); // Get the first project of this person.
         final int p = position;
         holder.item1.setText(person.name);

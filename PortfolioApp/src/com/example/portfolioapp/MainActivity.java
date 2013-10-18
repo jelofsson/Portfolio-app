@@ -25,12 +25,10 @@ public class MainActivity extends Activity {
 		*/
 		Jimmi j = new Jimmi();
 		persons.add(j);
-		
-		
-		
-		
 		Carl c = new Carl();
 		persons.add(c);
+		Kaan k = new Kaan();
+		persons.add(k);
 
 		// Create dynamic view-list items:
 		adapter = new FieldAdapter(this, R.id.listView, persons); /* We are sending the persons ArrayList to our custom adapter */

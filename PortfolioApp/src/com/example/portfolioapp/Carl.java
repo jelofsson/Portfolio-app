@@ -9,7 +9,7 @@ public class Carl extends Person {
 		super();
 		
 		// Person info:
-		name		= "Carl Blockås";
+		name		= "Carl Block√•s";
 		description = "Webdesigner/Programmer";
 		pictures.add("Carl1");
 		

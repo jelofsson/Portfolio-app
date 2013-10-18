@@ -32,6 +32,8 @@ public class ProjectActivity extends FragmentActivity {
      * The pager adapter, which provides the pages to the view pager widget.
      */
     private PagerAdapter mPagerAdapter;
+    
+    Person person;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +41,21 @@ public class ProjectActivity extends FragmentActivity {
 		setContentView(R.layout.activity_project);
 		
 		// Check if we got a User sent to us in EXTRAS:
-		Intent intent = getIntent();
-		if(intent.getStringExtra("name") == "jimmi")
+		Intent extras = getIntent();
+		//Bundle extras = getIntent().getExtras(); 
+		
+		if(extras.getStringExtra("name") == "Jimmi Elofsson")
 		{
-			Person person = new Jimmi();
+			person = new Jimmi();
 		}
-		Person person = new Jimmi();
+		else if(extras.getStringExtra("name") == "Kaan Orgunmat")
+		{
+			person = new Kaan();
+		}
+		else if(extras.getStringExtra("name") == "Carl Blockås")
+		{
+			person = new Carl();
+		}
         // Instantiate a ViewPager and a PagerAdapter.
         mPager = (ViewPager) findViewById(R.id.pager);
         //mPager.setPageTransformer(true, new DepthPageTransformer());
