@@ -39,9 +39,13 @@ public class SplashActivity extends Activity implements android.view.View.OnClic
 				// Nothing needs to be done here.
 			}			
 			public void onFinish() {
-				gotoMainBtn.setVisibility(View.VISIBLE); //temporary hide the continue button
+				//gotoMainBtn.setVisibility(View.VISIBLE); //temporary hide the continue button
 				//Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
-				//startActivity(myintent);		         
+				//startActivity(myintent);
+				
+				Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
+				startActivity(myintent);	
+			
 			}
 		}.start();
 

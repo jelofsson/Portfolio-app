@@ -68,7 +68,7 @@ public class FieldAdapter extends ArrayAdapter<Person>{
         if(person.pictures.size()>0)
         {
         	int imageResource = getContext().getResources().getIdentifier(person.pictures.get(0) , null, v.getContext().getPackageName());
-    		Picasso.with(v.getContext()).load(imageResource).resize(90, 90).centerCrop().into(holder.item2);
+    		Picasso.with(v.getContext()).load(imageResource).resize(128, 128).centerCrop().into(holder.item2);
         }   
         
         return v;
