@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -111,7 +112,7 @@ public class ProjectActivity extends FragmentActivity {
      * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
      * sequence.
      */
-    private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
+    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
     	
     	protected Person person;
     	

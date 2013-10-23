@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -78,7 +79,7 @@ public class ScreenSlideProjectFragment extends Fragment {
 
         // Set the media and description.
         // Media, Instantiate a ViewPager and a PagerAdapter:
-        PagerAdapter mPagerAdapter = new ScreenSlidePagerAdapter(getFragmentManager());
+        PagerAdapter mPagerAdapter = new ScreenSlidePagerAdapter(getChildFragmentManager());
         ((ViewPager) rootView.findViewById(R.id.mediaPager)).setAdapter(mPagerAdapter);
         return rootView;
     }
@@ -94,7 +95,7 @@ public class ScreenSlideProjectFragment extends Fragment {
      * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
      * sequence.
      */
-    private class ScreenSlidePagerAdapter extends FragmentPagerAdapter 
+    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter 
     {	
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
