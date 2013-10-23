@@ -32,7 +32,7 @@ public class SplashActivity extends Activity implements android.view.View.OnClic
 		 * Timer for opening the MainActivity after 2000milliseconds.
 		 * CountDownTimer(time, interval)
 		 */
-		new CountDownTimer(2000, 1000) {
+		new CountDownTimer(500, 1000) {
 			@Override
 			public void onTick(long arg0) {
 				// TODO Auto-generated method stub
@@ -47,42 +47,14 @@ public class SplashActivity extends Activity implements android.view.View.OnClic
 
 
 	}
-	/*
-	 * Letting oncClick still being here. Might come good later.
-	 * 
-	 * 
-	 */
 	
 	@Override
 	public void onClick(View v) {
 		if(v==gotoMainBtn){
 			System.out.println("gotoMainBtn pressed");  // print to console
-			
-			for(int i= 0; i <= 600; i++){
-				int myX = i;
-				ImageView iv = (ImageView)findViewById(R.id.splash);
-				RelativeLayout.LayoutParams absParams = 
-				    (RelativeLayout.LayoutParams)iv.getLayoutParams();
-				absParams.bottomMargin = myX;
-				iv.setLayoutParams(absParams);
-				
-			}
 
-			new CountDownTimer(2000, 1000) {
-				@Override
-				public void onTick(long arg0) {
-					// TODO Auto-generated method stub
-					// Nothing needs to be done here.
-				}			
-				public void onFinish() {
-					Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
-					startActivity(myintent);	         
-				}
-			}.start();			
-			
-			
-			
-
+			Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
+			startActivity(myintent);
 		}
 
 	}
