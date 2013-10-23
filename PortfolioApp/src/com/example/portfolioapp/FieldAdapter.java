@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class FieldAdapter extends ArrayAdapter<Person>{
-
+	
 	ArrayList<Person> persons = new ArrayList<Person>();
 
     private Activity activity;
@@ -39,6 +39,7 @@ public class FieldAdapter extends ArrayAdapter<Person>{
         if (v == null) {
             LayoutInflater vi =
                 (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            //Set the custom view
             v = vi.inflate(R.layout.field_input, null);
 	    // Fetch our item:s in this view so that we can modify them:
             holder = new ViewHolder();
@@ -67,7 +68,7 @@ public class FieldAdapter extends ArrayAdapter<Person>{
         if(person.pictures.size()>0)
         {
         	int imageResource = getContext().getResources().getIdentifier(person.pictures.get(0) , null, v.getContext().getPackageName());
-    		Picasso.with(v.getContext()).load(imageResource).resize(90, 90).centerCrop().into(holder.item2);
+    		Picasso.with(v.getContext()).load(imageResource).resize(128, 128).centerCrop().into(holder.item2);
         }   
         
         return v;

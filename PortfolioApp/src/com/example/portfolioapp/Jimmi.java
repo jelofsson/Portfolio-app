@@ -11,7 +11,7 @@ public class Jimmi extends Person {
 		// Person info:
 		name		= "Jimmi Elofsson";
 		description = "Webdesigner/Programmer";
-		pictures.add("drawable/jimmi");
+		pictures.add("drawable/headpic_jimmi");
 		
 		// Project 1:
 		Project p1 = new Project();

@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -29,32 +32,32 @@ public class SplashActivity extends Activity implements android.view.View.OnClic
 		 * Timer for opening the MainActivity after 2000milliseconds.
 		 * CountDownTimer(time, interval)
 		 */
-		new CountDownTimer(5000, 1000) {
+		new CountDownTimer(500, 1000) {
 			@Override
 			public void onTick(long arg0) {
 				// TODO Auto-generated method stub
 				// Nothing needs to be done here.
 			}			
 			public void onFinish() {
-				gotoMainBtn.setVisibility(View.VISIBLE); //temporary hide the continue button
+				//gotoMainBtn.setVisibility(View.VISIBLE); //temporary hide the continue button
 				//Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
-				//startActivity(myintent);		         
+				//startActivity(myintent);
+				
+				Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
+				startActivity(myintent);	
+			
 			}
 		}.start();
 
 
 	}
-	/*
-	 * Letting oncClick still being here. Might come good later.
-	 * 
-	 * 
-	 */
 	
 	@Override
 	public void onClick(View v) {
 		if(v==gotoMainBtn){
 			System.out.println("gotoMainBtn pressed");  // print to console
-			Intent myintent = new Intent(this, MainActivity.class); // Open the MainActivity view
+
+			Intent myintent = new Intent(SplashActivity.this, MainActivity.class); // Open the MainActivity view
 			startActivity(myintent);
 		}
 

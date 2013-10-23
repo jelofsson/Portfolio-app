@@ -9,9 +9,9 @@ public class Carl extends Person {
 		super();
 		
 		// Person info:
-		name		= "Carl Block√•s";
+		name		= "Carl Blockås";
 		description = "Webdesigner/Programmer";
-		
+		pictures.add("drawable/headpic_carl");		
 		// Project 1:
 		Project p = new Project();
 		p.name = "Text Effect";
