@@ -52,7 +52,7 @@ public class ProjectActivity extends FragmentActivity {
 		{
 			person = new Kaan();
 		}
-		else if(name.equals("Carl Block√•s"))
+		else if(name.equals("Carl Blockås"))
 		{
 			person = new Carl();
 		}
