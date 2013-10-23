@@ -2,6 +2,8 @@ package com.example.portfolioapp;
 
 import java.util.ArrayList;
 
+import com.squareup.picasso.Picasso;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -62,7 +64,12 @@ public class FieldAdapter extends ArrayAdapter<Person>{
         //final Project project = person.getProjectById(1); // Get the first project of this person.
         final int p = position;
         holder.item1.setText(person.name);
-            
+        if(person.pictures.size()>0)
+        {
+        	int imageResource = getContext().getResources().getIdentifier(person.pictures.get(0) , null, v.getContext().getPackageName());
+    		Picasso.with(v.getContext()).load(imageResource).resize(90, 90).centerCrop().into(holder.item2);
+        }   
+        
         return v;
     }
  

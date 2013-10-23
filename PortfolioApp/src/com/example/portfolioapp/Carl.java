@@ -11,7 +11,6 @@ public class Carl extends Person {
 		// Person info:
 		name		= "Carl Blockås";
 		description = "Webdesigner/Programmer";
-		pictures.add("Carl1");
 		
 		// Project 1:
 		Project p = new Project();
