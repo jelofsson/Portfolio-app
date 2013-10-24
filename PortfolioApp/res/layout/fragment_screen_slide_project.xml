@@ -51,6 +51,14 @@
             android:layout_height="wrap_content"
             android:text="Project-description"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonWebsite"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.44"
+            android:text="Visit website" />
+
     </LinearLayout>
 
 </ScrollView>

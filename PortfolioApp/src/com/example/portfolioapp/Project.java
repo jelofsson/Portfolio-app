@@ -8,7 +8,7 @@ public class Project {
 
 	ArrayList<String> 	pictures	= new ArrayList<String>();
 	ArrayList<String> 	videos		= new ArrayList<String>();
-	String				description,name = new String();
+	String				description,name,url = new String();
 
 	Activity activity = new Activity();
 	public Project()

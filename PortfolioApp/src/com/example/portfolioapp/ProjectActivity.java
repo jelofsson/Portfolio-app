@@ -53,7 +53,7 @@ public class ProjectActivity extends FragmentActivity {
 		{
 			person = new Kaan();
 		}
-		else if(name.equals("Carl BlockŒs"))
+		else if(name.equals("Carl BlockÃ¥s"))
 		{
 			person = new Carl();
 		}
@@ -70,15 +70,10 @@ public class ProjectActivity extends FragmentActivity {
         super.onCreateOptionsMenu(menu);
 
         getMenuInflater().inflate(R.menu.project, menu);
-        menu.findItem(R.id.action_previous).setEnabled(mPager.getCurrentItem() > 0);
-
         // Add either a "next" or "finish" button to the action bar, depending on which page
         // is currently selected.
-        MenuItem item = menu.add(Menu.NONE, R.id.action_next, Menu.NONE,
-                (mPager.getCurrentItem() == mPagerAdapter.getCount() - 1)
-                        ? R.string.action_previous
-                        : R.string.action_next);
-        item.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+        //MenuItem item = menu.add(R.id.action_back);
+        //item.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
         return true;
     }
 	
@@ -86,23 +81,10 @@ public class ProjectActivity extends FragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
         switch (item.getItemId()) {
-            case android.R.id.home:
+            case R.id.action_back:
                 // Navigate "up" the demo structure to the launchpad activity.
                 // See http://developer.android.com/design/patterns/navigation.html for more.
                 NavUtils.navigateUpTo(this, new Intent(this, MainActivity.class));
-                return true;
-
-            case R.id.action_previous:
-                // Go to the previous step in the wizard. If there is no previous step,
-                // setCurrentItem will do nothing.
-                mPager.setCurrentItem(mPager.getCurrentItem() - 1);
-                return true;
-
-            case R.id.action_next:
-                // Advance to the next step in the wizard. If there is no next step, setCurrentItem
-                // will do nothing.
-                mPager.setCurrentItem(mPager.getCurrentItem() + 1);
-                return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -123,7 +105,7 @@ public class ProjectActivity extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return (Fragment) ScreenSlideProjectFragment.create(position, person.getProjectById(position));
+            return (Fragment) ScreenSlideProjectFragment.create(position, person.getProjectById(position), getApplicationContext());
         }
 
         @Override
