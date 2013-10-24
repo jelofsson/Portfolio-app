@@ -9,6 +9,7 @@ public class Kaan extends Person {
 		// Person info:
 		name		= "Kaan Orgunmat";
 		description = "Webdesigner/Programmer";
+		pictures.add("drawable/headpic_kaan");		
 		
 		// Project 1:
 		Project p1 = new Project();
