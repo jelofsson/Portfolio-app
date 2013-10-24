@@ -54,10 +54,11 @@
 
         <ImageButton
             android:id="@+id/buttonWebsite"
-            android:layout_width="272dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1.44"
             android:contentDescription="Visit website"
+            android:layout_marginTop="15dp"
             android:background="@drawable/visitbutton"
             style="@drawable/visitbutton" />
 

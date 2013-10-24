@@ -14,6 +14,7 @@ public class Kaan extends Person {
 		// Project 1:
 		Project p1 = new Project();
 		p1.name = "Kaan Orgunmat";
+		p1.url = "http://www.kaan.pw";
 		p1.description = "A Hyper Island student with many ambitions over electronic world. Looking forward to broaden his mobile landscapes' horizon.";
 		p1.pictures.add("drawable/headpic_kaan");
 		projects.add(p1);
