@@ -9,13 +9,13 @@ public class Carl extends Person {
 		super();
 		
 		// Person info:
-		name		= "Carl Blockås";
+		name		= "Carl Block√•s";
 		description = "Webdesigner/Programmer";
 		pictures.add("drawable/headpic_carl");
 
 		//About Carl
 		Project p = new Project();
-		p.name = "Carl Blockås";
+		p.name = "Carl BlockÔøΩs";
 		p.description = "Since childhood I've been interested in coding and design. But my orientation is in the coding." +
 				" Putting design and coding together is something i think is essential to understand the workflow and processes of creating a neat product or service.";
 		p.pictures.add("drawable/headpic_carl");

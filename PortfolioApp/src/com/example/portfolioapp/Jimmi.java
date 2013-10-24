@@ -12,7 +12,14 @@ public class Jimmi extends Person {
 		name		= "Jimmi Elofsson";
 		description = "Webdesigner/Programmer";
 		pictures.add("drawable/headpic_jimmi");
-		
+
+		// Profile:
+		Project p = new Project();
+		p.name = "Jimmi Elofsson";
+		p.description = "";
+		p.url = "http://www.jelofsson.se/";
+		p.pictures.add("drawable/headpic_jimmi");
+		projects.add(p);
 		// Project 1:
 		Project p1 = new Project();
 		p1.name = "Conpot.se";
