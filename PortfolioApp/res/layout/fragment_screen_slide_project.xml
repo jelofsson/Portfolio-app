@@ -52,12 +52,12 @@
             android:text="Project-description"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonWebsite"
             android:layout_width="272dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.44"
-            android:text="Visit website" />
+            android:contentDescription="Visit website" />
 
     </LinearLayout>
 

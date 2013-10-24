@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
@@ -86,9 +87,9 @@ public class ScreenSlideProjectFragment extends Fragment {
         ((TextView) rootView.findViewById(R.id.ProjectDescription)).setText(mDescription);
         
         if(mUrl.length()==0) {
-        	((Button) rootView.findViewById(R.id.buttonWebsite)).setVisibility(View.GONE);
+        	((ImageButton) rootView.findViewById(R.id.buttonWebsite)).setVisibility(View.GONE);
         } else {
-        	((Button) rootView.findViewById(R.id.buttonWebsite)).setOnClickListener(new View.OnClickListener() {
+        	((ImageButton) rootView.findViewById(R.id.buttonWebsite)).setOnClickListener(new View.OnClickListener() {
         		public void onClick(View v) {
         	        Uri uriUrl = Uri.parse(mUrl);
         	        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
