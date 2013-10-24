@@ -57,7 +57,9 @@
             android:layout_width="272dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.44"
-            android:contentDescription="Visit website" />
+            android:contentDescription="Visit website"
+            android:background="@drawable/visitbutton"
+            style="@drawable/visitbutton" />
 
     </LinearLayout>
 
