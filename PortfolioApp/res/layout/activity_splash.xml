@@ -29,4 +29,15 @@
         android:onClick="onClick"
         android:src="@drawable/continue_button_xml" />
 
+    <ImageView
+        android:id="@+id/braindead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:contentDescription="team braindead"
+        android:src="@drawable/braindead" />
+
 </RelativeLayout>

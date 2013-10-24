@@ -32,7 +32,7 @@ public class SplashActivity extends Activity implements android.view.View.OnClic
 		 * Timer for opening the MainActivity after 2000milliseconds.
 		 * CountDownTimer(time, interval)
 		 */
-		new CountDownTimer(500, 1000) {
+		new CountDownTimer(1000, 1000) {
 			@Override
 			public void onTick(long arg0) {
 				// TODO Auto-generated method stub
