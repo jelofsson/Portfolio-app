@@ -16,8 +16,8 @@ public class Jimmi extends Person {
 		// Profile:
 		Project p = new Project();
 		p.name = "Jimmi Elofsson";
-		p.description = "My name is Jimmi Elofsson and I’m an Hyper Island – Mobile Design & Development -14 student currently located in south part of Sweden. My biggest interests are back-end programming, UX-design, future technology, mobile and meeting unicorns!" +
-						"I’m currently looking for a internship in The States or Australia (preferably San Fransisco) for the autumn/winter of 2015. If you know any company or people who I can talk to, please contact me!";
+		p.description = "My name is Jimmi Elofsson and Im an Hyper Island – Mobile Design & Development -14 student currently located in south part of Sweden. My biggest interests are back-end programming, UX-design, future technology, mobile and meeting unicorns!" +
+						"Im currently looking for a internship in The States or Australia (preferably San Fransisco) for the autumn/winter of 2015. If you know any company or people who I can talk to, please contact me!";
 		p.url = "http://www.jelofsson.se/";
 		p.pictures.add("drawable/headpic_jimmi");
 		projects.add(p);

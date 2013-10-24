@@ -53,7 +53,7 @@ public class ProjectActivity extends FragmentActivity {
 		{
 			person = new Kaan();
 		}
-		else if(name.equals("Carl BlockŒs"))
+		else if(name.equals("Carl Blockï¿½s"))
 		{
 			person = new Carl();
 		}
@@ -68,12 +68,7 @@ public class ProjectActivity extends FragmentActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-
         getMenuInflater().inflate(R.menu.project, menu);
-        // Add either a "next" or "finish" button to the action bar, depending on which page
-        // is currently selected.
-        //MenuItem item = menu.add(R.id.action_back);
-        //item.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
         return true;
     }
 	

@@ -83,9 +83,12 @@ public class ScreenSlideProjectFragment extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater
                 .inflate(R.layout.fragment_screen_slide_project, container, false);
         
-        ((TextView) rootView.findViewById(R.id.ProjectName)).setText(mName);
-        ((TextView) rootView.findViewById(R.id.ProjectDescription)).setText(mDescription);
-        
+        // ---------------------------------------
+        // Set our Project View values:
+        // ---------------------------------------
+        ((TextView) rootView.findViewById(R.id.ProjectName)).setText(mName); // Name
+        ((TextView) rootView.findViewById(R.id.ProjectDescription)).setText(mDescription); // Description
+        // Button:
         if(mUrl.length()==0) {
         	((ImageButton) rootView.findViewById(R.id.buttonWebsite)).setVisibility(View.GONE);
         } else {
@@ -97,9 +100,7 @@ public class ScreenSlideProjectFragment extends Fragment {
         		}
         	});        	
         }
-
-        // Set the media and description.
-        // Media, Instantiate a ViewPager and a PagerAdapter:
+        // Pictures, Instantiate a ViewPager and a PagerAdapter:
         PagerAdapter mPagerAdapter = new ScreenSlidePagerAdapter(getChildFragmentManager());
         ((ViewPager) rootView.findViewById(R.id.mediaPager)).setAdapter(mPagerAdapter);
         return rootView;
