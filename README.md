@@ -3,13 +3,13 @@ Portfolio Application
 
 Portfolio application made using android SDK.
 
-![Image](/Pictures/hyper_island-student_project_white.jpg)
+![This is a student project.](/Pictures/hyper_island-student_project_white.jpg)
 
 Developed by
 ---------------
-	[Jimmi Elofssson] (http://www.jelofsson.se/) - MDD14 Karlskrona
-	[Carl Blockås] (https://github.com/carlblock) - MDD14 Karlskrona
-	[Kaan Orgunmat] (https://github.com/Notakarmagun) - MDD14 Karlskrona
+- [Jimmi Elofssson] (http://www.jelofsson.se/) - MDD14 Karlskrona	
+- [Carl Blockås] (https://github.com/carlblock) - MDD14 Karlskrona	
+- [Kaan Orgunmat] (https://github.com/Notakarmagun) - MDD14 Karlskrona	
 
 **SplashActivity.java**  
 ![Image](/Pictures/20131003_160544.jpg)
